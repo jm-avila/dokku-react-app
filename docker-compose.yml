@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  dokku-73:
+    build: .
+    ports:
+      - "80:80"
+    env_file:
+      - ./.env
+    #stdin_open: true # docker run -i
+    #tty: true # docker run -t
